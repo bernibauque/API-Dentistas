@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.home{
+  padding: 3%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Open Sans", Arial, sans-serif; /* Fuente "Open Sans" con fallbacks */
+  margin: 0;
+  padding: 1rem;
+}
+
+h2{
+  text-align: center; /* Centra los títulos */
+  margin: 1rem 0;
+}
+
+h3{
+  text-align: center; /* Centra los títulos */
+}
+
+/*BARRA NAV*/
+.navegador {
+  display: flex;
+  width: 97%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #CCCCCC;
+}
+
+.nombrenav{
+  font-family: "Open Sans", Arial, sans-serif;
+  margin-right: auto; /* Desplaza la frase completamente a la izquierda */
+}
+
+.nav-logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 1rem; /* Espacio entre la imagen y los botones */
+}
+
+.nav-button {
+  background-color: #6495ED;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-button:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.8), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nav-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-button:hover:before {
+  opacity: 1;
+}
+
+.theme-button {
+  background-color: #6495ED;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-button:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.8), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.theme-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/**/
+
+a{
+  color: #000;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+}
+a:hover{
+  color: rgb(136, 136, 136);
+} 
+
+/*FOOTER*/
+
+footer {
+  display: flex;
+  padding: 2rem;
+  position: relative;
+  bottom: 0;
+  width: 95%;
+  height: 40px;
+}
+
+.dhicon {
+  width: 20%;
+}
+
+.icon {
+  width: 60%;
+  border-radius: 10px;
+  margin-right: 10px; /* Ajusta el valor para reducir el espacio entre los iconos */
+}
+
+/*FORMULARIO*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%; /* Ajusta el ancho del formulario al 80% de la tarjeta */
+  padding: 1rem; /* Ajusta el padding para dar más espacio al contenido del formulario */
+  margin-top: 2rem; /* Espacio adicional entre el formulario y los elementos anteriores */
+}
+
+.form-label {
+  text-align: center;
+  margin-bottom: 0.5rem; /* Espacio inferior entre las etiquetas del formulario */
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #555555;
+  border-radius: 5px;
+  resize: vertical; /* Permite redimensionar verticalmente el cuadro de entrada */
+}
+
+.form-button {
+  background-color: #6495ED;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+p {
+  text-align: center;
+}
+
+/*CARD*/
+.imagen{
+  border-radius: 50%; 
+  width: 200px; 
+  height: 200px; 
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 0.5rem;
+  border: 0.5px solid rgb(136, 136, 136);
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  border: 0.5px solid rgb(206, 217, 142);
+  transform: scale(0.9);
+}
+
+.card-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.favButton {
+  background-color: #AED6F1; /* Color verde claro */
+  color: #000000; /* Letras negras */
+  border: none;
+  padding: 0.7rem 1.2rem; /* Tamaño ligeramente aumentado */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.favButton:hover {
+  /* Estilos para el botón al pasar el cursor por encima */
+  background-color: #85C1E9; /* Color verde claro más oscuro */
+}
+
+.favButton{
+  background-color: rgba(136, 136, 136, 0.116);
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+/**/
+
+table {
+ border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    border: 1px solid #ccc;
+
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-content {
+  text-align: center;
+  margin-right: 2rem; /* Ajusta el margen derecho para separar el formulario */
+}
+
+.form-container {
+  margin-left: 2rem; /* Ajusta el margen izquierdo para desplazar el formulario hacia la derecha */
+}
+
+
+
+
